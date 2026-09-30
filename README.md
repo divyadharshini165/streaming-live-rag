@@ -5,6 +5,12 @@
 An event-driven RAG engine for full-duplex conversation. It listens to a transcript **chunk by chunk**, starts retrieving **before the user finishes speaking**, splits one spoken request into the **several queries it implies**, **refines the previous answer** when a late detail arrives (instead of restarting), **skips retrieval** for reformat or small-talk turns, and cites a corpus chunk for **every fact**. If the corpus lacks the answer, it says so explicitly.
 
 ---
+## Submission Deliverables
+
+- **Demo Video (YouTube):** [Watch 5-Min Video](https://youtu.be/AaopxFCN7rw?si=9Xv12n1SnxNEPGe3)
+- **Presentation Deck:** [`docs/SRMIST_Live RAGrets_Submission.pptx`](./docs/SRMIST_Live%20RAGrets_Submission.pptx)
+- **AI Usage Disclosure Form:** [`docs/SRMIST_Live RAGrets_AI_Disclosure.docx`](./docs/SRMIST_Live%20RAGrets_AI_Disclosure.docx)
+- **Git Release Tag:** `PRISM_GENAI_HACKATHON_Y2026`
 
 ## Quick start
 
