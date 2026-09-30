@@ -8,8 +8,8 @@ An event-driven RAG engine for full-duplex conversation. It listens to a transcr
 ## Submission Deliverables
 
 - **Demo Video (YouTube):** [Watch 5-Min Video](https://youtu.be/AaopxFCN7rw?si=9Xv12n1SnxNEPGe3)
-- **Presentation Deck:** [`docs/SRMIST_Live RAGrets_Submission.pptx`](./docs/SRMIST_Live%20RAGrets_Submission.pptx)
-- **AI Usage Disclosure Form:** [`docs/SRMIST_Live RAGrets_AI_Disclosure.docx`](./docs/SRMIST_Live%20RAGrets_AI_Disclosure.docx)
+- **Presentation Deck:** [`docs/SRMIST_Live RAGrets.pptx`](./docs/SRMIST_Live%20RAGrets.pptx)
+- **AI Usage Disclosure Form:** [`docs/LangAI3.0_AI_Disclosure.docx`](./docs/LangAI3.0_AI_Disclosure.docx)
 - **Git Release Tag:** `PRISM_GENAI_HACKATHON_Y2026`
 
 ## Quick start
