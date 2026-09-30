@@ -1,0 +1,59 @@
+{
+  "description": "Streaming replay test set for the sample corpus. Types: single, compound, late_detail, presentation, conversational, out_of_corpus. gold_docs = documents that must be retrieved; min_intents = distinct sub-intents expected.",
+  "sessions": [
+    {"id": "S01", "turns": [
+      {"utterance": "What is the daily allowance for domestic travel in metro cities?", "type": "single", "gold_docs": ["Doc_01"]}]},
+    {"id": "S02", "turns": [
+      {"utterance": "I need to plan a customer workshop in Pune for 30 people, and I need the cancellation policy and the catering options.", "type": "compound", "min_intents": 3, "gold_docs": ["Doc_07", "Doc_08"]}]},
+    {"id": "S03", "turns": [
+      {"utterance": "Summarize the travel reimbursement rule for an employee trip.", "type": "single", "gold_docs": ["Doc_01"]},
+      {"utterance": "The trip was international and the booking was made after travel.", "type": "late_detail", "gold_docs": ["Doc_02", "Doc_03"]},
+      {"utterance": "Please repeat your last answer in two bullets.", "type": "presentation"}]},
+    {"id": "S04", "turns": [
+      {"utterance": "How many earned leaves do I get and can I carry them forward, and also what is the work from home rule?", "type": "compound", "min_intents": 2, "gold_docs": ["Doc_15", "Doc_16"]}]},
+    {"id": "S05", "turns": [
+      {"utterance": "We are hosting a training for 40 people in Chennai, which venues fit and what is their cancellation policy?", "type": "compound", "min_intents": 2, "gold_docs": ["Doc_10", "Doc_11"]}]},
+    {"id": "S06", "turns": [
+      {"utterance": "Is there parking available at Orchid Hall?", "type": "out_of_corpus", "gold_docs": ["Doc_07"]}]},
+    {"id": "S07", "turns": [
+      {"utterance": "Hello, can you hear me?", "type": "conversational"},
+      {"utterance": "What should I do if my laptop gets stolen?", "type": "single", "gold_docs": ["Doc_17"]},
+      {"utterance": "Thanks, that is helpful.", "type": "conversational"}]},
+    {"id": "S08", "turns": [
+      {"utterance": "What hotel limit applies in metro cities and how do I claim cab expenses?", "type": "compound", "min_intents": 2, "gold_docs": ["Doc_04", "Doc_05"]},
+      {"utterance": "Actually I will be staying with my cousin instead.", "type": "late_detail", "gold_docs": ["Doc_04"]}]},
+    {"id": "S09", "turns": [
+      {"utterance": "How much does the company reimburse for certifications?", "type": "single", "gold_docs": ["Doc_18"]}]},
+    {"id": "S10", "turns": [
+      {"utterance": "For a 30 person workshop in Bengaluru, which venue works and which caterer can deliver there?", "type": "compound", "min_intents": 2, "gold_docs": ["Doc_12", "Doc_14"]}]},
+    {"id": "S11", "turns": [
+      {"utterance": "What is the per diem for international travel?", "type": "single", "gold_docs": ["Doc_02"]},
+      {"utterance": "Make that shorter.", "type": "presentation"}]},
+    {"id": "S12", "turns": [
+      {"utterance": "What is the cancellation policy for Riverside Business Centre?", "type": "single", "gold_docs": ["Doc_08"]},
+      {"utterance": "What if we cancel ten days before the event?", "type": "late_detail", "gold_docs": ["Doc_08"]}]},
+    {"id": "S13", "turns": [
+      {"utterance": "What are the foreign currency receipt rules and is travel insurance mandatory for international trips?", "type": "compound", "min_intents": 2, "gold_docs": ["Doc_02"]}]},
+    {"id": "S14", "turns": [
+      {"utterance": "What is the maternity leave policy?", "type": "out_of_corpus", "gold_docs": ["Doc_15"]}]},
+    {"id": "S15", "turns": [
+      {"utterance": "Can we use outside caterers at Orchid Hall?", "type": "single", "gold_docs": ["Doc_07"]}]},
+    {"id": "S16", "turns": [
+      {"utterance": "How far in advance should I book a workshop, what is the budget per participant, and which caterers are empanelled?", "type": "compound", "min_intents": 3, "gold_docs": ["Doc_06"]}]},
+    {"id": "S17", "turns": [
+      {"utterance": "What is the booking lead time for events?", "type": "single", "gold_docs": ["Doc_06"]},
+      {"utterance": "It is for about 60 people.", "type": "late_detail", "gold_docs": ["Doc_06"]}]},
+    {"id": "S18", "turns": [
+      {"utterance": "Explain the own vehicle mileage reimbursement.", "type": "single", "gold_docs": ["Doc_05"]},
+      {"utterance": "Say that again in simple words.", "type": "presentation"}]},
+    {"id": "S19", "turns": [
+      {"utterance": "How many days of sick leave do we get and when is a medical certificate needed?", "type": "compound", "min_intents": 2, "gold_docs": ["Doc_15"]}]},
+    {"id": "S20", "turns": [
+      {"utterance": "Who approves travel claims above fifty thousand rupees?", "type": "single", "gold_docs": ["Doc_01"]},
+      {"utterance": "Okay got it.", "type": "conversational"}]},
+    {"id": "S21", "turns": [
+      {"utterance": "Does the company offer stock options to employees?", "type": "out_of_corpus", "gold_docs": []}]},
+    {"id": "S22", "turns": [
+      {"utterance": "What is the Jain menu notice period at Adyar Heritage Hall and how much does the hall cost for a full day?", "type": "compound", "min_intents": 2, "gold_docs": ["Doc_11"]}]}
+  ]
+}

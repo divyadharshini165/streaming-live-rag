@@ -1,0 +1,565 @@
+{
+  "info": {
+    "chunks": 76,
+    "corpus": "/app/data/corpus",
+    "index_ms": 21761.7,
+    "mode": "hybrid",
+    "llm": "none (offline extractive mode)"
+  },
+  "results": {
+    "full": {
+      "G2_early_retrieval_rate": 1.0,
+      "false_trigger_rate": 0.0,
+      "mean_lead_time_s": 1.65,
+      "G3_multi_intent_rate": 1.0,
+      "G3_full_intent_rate": 1.0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 0.93,
+      "G4_citation_support": 1.0,
+      "fabricated_citations": 0,
+      "uncertainty_on_out_of_corpus": 1.0,
+      "false_uncertainty_rate": 0.05263157894736842,
+      "G5_refinement_pass_rate": 1.0,
+      "presentation_suppression_rate": 1.0,
+      "G6_trace_coverage": 1.0,
+      "ttft_ms_mean": 158.22,
+      "ttft_ms_p95": 379.38,
+      "post_utterance_latency_ms_mean": 225.1,
+      "retrieval_latency_ms_mean": 115.83,
+      "retrieval_calls_per_turn": 1.75,
+      "tokens_per_turn": 0,
+      "cost_usd_per_turn": 0.0,
+      "turns": 32,
+      "runtime_s": 21.83
+    },
+    "baseline_classic_rag": {
+      "G2_early_retrieval_rate": 0.0,
+      "false_trigger_rate": 1.0,
+      "mean_lead_time_s": null,
+      "G3_multi_intent_rate": 0.0,
+      "G3_full_intent_rate": 0.0,
+      "retrieval_recall": 0.96,
+      "citation_recall": 0.7,
+      "G4_citation_support": 1.0,
+      "fabricated_citations": 0,
+      "uncertainty_on_out_of_corpus": 1.0,
+      "false_uncertainty_rate": 0.15789473684210525,
+      "G5_refinement_pass_rate": 0.0,
+      "presentation_suppression_rate": 0.0,
+      "G6_trace_coverage": 1.0,
+      "ttft_ms_mean": 247.28,
+      "ttft_ms_p95": 314.31,
+      "post_utterance_latency_ms_mean": 297.49,
+      "retrieval_latency_ms_mean": 70.73,
+      "retrieval_calls_per_turn": 1,
+      "tokens_per_turn": 0,
+      "cost_usd_per_turn": 0.0,
+      "turns": 32,
+      "runtime_s": 17.4
+    },
+    "ablation_no_decomposition": {
+      "G2_early_retrieval_rate": 1.0,
+      "false_trigger_rate": 0.0,
+      "mean_lead_time_s": 1.65,
+      "G3_multi_intent_rate": 0.0,
+      "G3_full_intent_rate": 0.0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 0.78,
+      "G4_citation_support": 0.9807692307692307,
+      "fabricated_citations": 0,
+      "uncertainty_on_out_of_corpus": 1.0,
+      "false_uncertainty_rate": 0.15789473684210525,
+      "G5_refinement_pass_rate": 0.75,
+      "presentation_suppression_rate": 1.0,
+      "G6_trace_coverage": 1.0,
+      "ttft_ms_mean": 150.86,
+      "ttft_ms_p95": 284.98,
+      "post_utterance_latency_ms_mean": 214.72,
+      "retrieval_latency_ms_mean": 74.7,
+      "retrieval_calls_per_turn": 1.28,
+      "tokens_per_turn": 0,
+      "cost_usd_per_turn": 0.0,
+      "turns": 32,
+      "runtime_s": 18.67
+    },
+    "ablation_sparse_only": {
+      "G2_early_retrieval_rate": 1.0,
+      "false_trigger_rate": 0.0,
+      "mean_lead_time_s": 1.65,
+      "G3_multi_intent_rate": 1.0,
+      "G3_full_intent_rate": 1.0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 0.96,
+      "G4_citation_support": 1.0,
+      "fabricated_citations": 0,
+      "uncertainty_on_out_of_corpus": 1.0,
+      "false_uncertainty_rate": 0.05263157894736842,
+      "G5_refinement_pass_rate": 1.0,
+      "presentation_suppression_rate": 1.0,
+      "G6_trace_coverage": 1.0,
+      "ttft_ms_mean": 115.15,
+      "ttft_ms_p95": 210.83,
+      "post_utterance_latency_ms_mean": 185.15,
+      "retrieval_latency_ms_mean": 3.76,
+      "retrieval_calls_per_turn": 1.75,
+      "tokens_per_turn": 0,
+      "cost_usd_per_turn": 0.0,
+      "turns": 32,
+      "runtime_s": 16.59
+    },
+    "ablation_dense_only": {
+      "G2_early_retrieval_rate": 1.0,
+      "false_trigger_rate": 0.0,
+      "mean_lead_time_s": 1.65,
+      "G3_multi_intent_rate": 1.0,
+      "G3_full_intent_rate": 1.0,
+      "retrieval_recall": 1.0,
+      "citation_recall": 0.93,
+      "G4_citation_support": 1.0,
+      "fabricated_citations": 0,
+      "uncertainty_on_out_of_corpus": 1.0,
+      "false_uncertainty_rate": 0.05263157894736842,
+      "G5_refinement_pass_rate": 1.0,
+      "presentation_suppression_rate": 1.0,
+      "G6_trace_coverage": 1.0,
+      "ttft_ms_mean": 174.79,
+      "ttft_ms_p95": 465.72,
+      "post_utterance_latency_ms_mean": 243.45,
+      "retrieval_latency_ms_mean": 134.73,
+      "retrieval_calls_per_turn": 1.75,
+      "tokens_per_turn": 0,
+      "cost_usd_per_turn": 0.0,
+      "turns": 32,
+      "runtime_s": 24.37
+    }
+  },
+  "failures": {
+    "full": [],
+    "baseline_classic_rag": [
+      {
+        "gate": "G2",
+        "session": "S01",
+        "turn": 1,
+        "utterance": "What is the daily allowance for domestic travel in metro cities?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S02",
+        "turn": 1,
+        "utterance": "I need to plan a customer workshop in Pune for 30 people, and I need the cancellation policy and the catering options.",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S03",
+        "turn": 1,
+        "utterance": "Summarize the travel reimbursement rule for an employee trip.",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S03",
+        "turn": 2,
+        "utterance": "The trip was international and the booking was made after travel.",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S04",
+        "turn": 1,
+        "utterance": "How many earned leaves do I get and can I carry them forward, and also what is the work from home rule?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S05",
+        "turn": 1,
+        "utterance": "We are hosting a training for 40 people in Chennai, which venues fit and what is their cancellation policy?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S06",
+        "turn": 1,
+        "utterance": "Is there parking available at Orchid Hall?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S07",
+        "turn": 2,
+        "utterance": "What should I do if my laptop gets stolen?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S08",
+        "turn": 1,
+        "utterance": "What hotel limit applies in metro cities and how do I claim cab expenses?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S08",
+        "turn": 2,
+        "utterance": "Actually I will be staying with my cousin instead.",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S09",
+        "turn": 1,
+        "utterance": "How much does the company reimburse for certifications?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S10",
+        "turn": 1,
+        "utterance": "For a 30 person workshop in Bengaluru, which venue works and which caterer can deliver there?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S11",
+        "turn": 1,
+        "utterance": "What is the per diem for international travel?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S12",
+        "turn": 1,
+        "utterance": "What is the cancellation policy for Riverside Business Centre?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S12",
+        "turn": 2,
+        "utterance": "What if we cancel ten days before the event?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S13",
+        "turn": 1,
+        "utterance": "What are the foreign currency receipt rules and is travel insurance mandatory for international trips?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S14",
+        "turn": 1,
+        "utterance": "What is the maternity leave policy?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S15",
+        "turn": 1,
+        "utterance": "Can we use outside caterers at Orchid Hall?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S16",
+        "turn": 1,
+        "utterance": "How far in advance should I book a workshop, what is the budget per participant, and which caterers are empanelled?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S17",
+        "turn": 1,
+        "utterance": "What is the booking lead time for events?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S17",
+        "turn": 2,
+        "utterance": "It is for about 60 people.",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S18",
+        "turn": 1,
+        "utterance": "Explain the own vehicle mileage reimbursement.",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S19",
+        "turn": 1,
+        "utterance": "How many days of sick leave do we get and when is a medical certificate needed?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S20",
+        "turn": 1,
+        "utterance": "Who approves travel claims above fifty thousand rupees?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S21",
+        "turn": 1,
+        "utterance": "Does the company offer stock options to employees?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S22",
+        "turn": 1,
+        "utterance": "What is the Jain menu notice period at Adyar Heritage Hall and how much does the hall cost for a full day?",
+        "why": "retrieval started only after utterance end"
+      },
+      {
+        "gate": "G2",
+        "session": "S03",
+        "turn": 3,
+        "utterance": "Please repeat your last answer in two bullets.",
+        "why": "retrieval triggered on a no-retrieval turn"
+      },
+      {
+        "gate": "G2",
+        "session": "S07",
+        "turn": 1,
+        "utterance": "Hello, can you hear me?",
+        "why": "retrieval triggered on a no-retrieval turn"
+      },
+      {
+        "gate": "G2",
+        "session": "S07",
+        "turn": 3,
+        "utterance": "Thanks, that is helpful.",
+        "why": "retrieval triggered on a no-retrieval turn"
+      },
+      {
+        "gate": "G2",
+        "session": "S11",
+        "turn": 2,
+        "utterance": "Make that shorter.",
+        "why": "retrieval triggered on a no-retrieval turn"
+      },
+      {
+        "gate": "G2",
+        "session": "S18",
+        "turn": 2,
+        "utterance": "Say that again in simple words.",
+        "why": "retrieval triggered on a no-retrieval turn"
+      },
+      {
+        "gate": "G2",
+        "session": "S20",
+        "turn": 2,
+        "utterance": "Okay got it.",
+        "why": "retrieval triggered on a no-retrieval turn"
+      },
+      {
+        "gate": "G3",
+        "session": "S02",
+        "turn": 1,
+        "utterance": "I need to plan a customer workshop in Pune for 30 people, and I need the cancellation policy and the catering options.",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S04",
+        "turn": 1,
+        "utterance": "How many earned leaves do I get and can I carry them forward, and also what is the work from home rule?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S05",
+        "turn": 1,
+        "utterance": "We are hosting a training for 40 people in Chennai, which venues fit and what is their cancellation policy?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S08",
+        "turn": 1,
+        "utterance": "What hotel limit applies in metro cities and how do I claim cab expenses?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S10",
+        "turn": 1,
+        "utterance": "For a 30 person workshop in Bengaluru, which venue works and which caterer can deliver there?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S13",
+        "turn": 1,
+        "utterance": "What are the foreign currency receipt rules and is travel insurance mandatory for international trips?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S16",
+        "turn": 1,
+        "utterance": "How far in advance should I book a workshop, what is the budget per participant, and which caterers are empanelled?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S19",
+        "turn": 1,
+        "utterance": "How many days of sick leave do we get and when is a medical certificate needed?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S22",
+        "turn": 1,
+        "utterance": "What is the Jain menu notice period at Adyar Heritage Hall and how much does the hall cost for a full day?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "recall",
+        "session": "S17",
+        "turn": 2,
+        "utterance": "It is for about 60 people.",
+        "why": "missed gold docs ['Doc_06']"
+      },
+      {
+        "gate": "G5",
+        "session": "S03",
+        "turn": 2,
+        "utterance": "The trip was international and the booking was made after travel.",
+        "why": "classified as new_query; prior citations not preserved"
+      },
+      {
+        "gate": "G5",
+        "session": "S08",
+        "turn": 2,
+        "utterance": "Actually I will be staying with my cousin instead.",
+        "why": "classified as new_query; prior citations not preserved"
+      },
+      {
+        "gate": "G5",
+        "session": "S12",
+        "turn": 2,
+        "utterance": "What if we cancel ten days before the event?",
+        "why": "classified as new_query; prior citations not preserved"
+      },
+      {
+        "gate": "G5",
+        "session": "S17",
+        "turn": 2,
+        "utterance": "It is for about 60 people.",
+        "why": "classified as new_query; prior citations not preserved"
+      },
+      {
+        "gate": "suppression",
+        "session": "S03",
+        "turn": 3,
+        "utterance": "Please repeat your last answer in two bullets.",
+        "why": "turn_type=new_query, retrievals=1"
+      },
+      {
+        "gate": "suppression",
+        "session": "S11",
+        "turn": 2,
+        "utterance": "Make that shorter.",
+        "why": "turn_type=new_query, retrievals=1"
+      },
+      {
+        "gate": "suppression",
+        "session": "S18",
+        "turn": 2,
+        "utterance": "Say that again in simple words.",
+        "why": "turn_type=new_query, retrievals=1"
+      }
+    ],
+    "ablation_no_decomposition": [
+      {
+        "gate": "G3",
+        "session": "S02",
+        "turn": 1,
+        "utterance": "I need to plan a customer workshop in Pune for 30 people, and I need the cancellation policy and the catering options.",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S04",
+        "turn": 1,
+        "utterance": "How many earned leaves do I get and can I carry them forward, and also what is the work from home rule?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S05",
+        "turn": 1,
+        "utterance": "We are hosting a training for 40 people in Chennai, which venues fit and what is their cancellation policy?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S08",
+        "turn": 1,
+        "utterance": "What hotel limit applies in metro cities and how do I claim cab expenses?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S10",
+        "turn": 1,
+        "utterance": "For a 30 person workshop in Bengaluru, which venue works and which caterer can deliver there?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S13",
+        "turn": 1,
+        "utterance": "What are the foreign currency receipt rules and is travel insurance mandatory for international trips?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S16",
+        "turn": 1,
+        "utterance": "How far in advance should I book a workshop, what is the budget per participant, and which caterers are empanelled?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S19",
+        "turn": 1,
+        "utterance": "How many days of sick leave do we get and when is a medical certificate needed?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G3",
+        "session": "S22",
+        "turn": 1,
+        "utterance": "What is the Jain menu notice period at Adyar Heritage Hall and how much does the hall cost for a full day?",
+        "why": "only 1 sub-query"
+      },
+      {
+        "gate": "G4",
+        "session": "S08",
+        "turn": 2,
+        "utterance": "Actually I will be staying with my cousin instead.",
+        "why": "unsupported sentence: I could not verify this from the provided documents."
+      },
+      {
+        "gate": "G5",
+        "session": "S08",
+        "turn": 2,
+        "utterance": "Actually I will be staying with my cousin instead.",
+        "why": "prior citations not preserved"
+      }
+    ],
+    "ablation_sparse_only": [],
+    "ablation_dense_only": []
+  }
+}
